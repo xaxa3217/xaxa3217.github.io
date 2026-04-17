@@ -1,2 +1,7 @@
-- name: Github Pages Directory Listing
-  uses: jayanta525/github-pages-directory-listing@v4.0.0
+name: Hello World Workflow
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions!"
