@@ -21,6 +21,12 @@ jobs:
         with:
           FOLDER: data      #directory to generate index
 
+      - name: Commit generated index files
+        run: |
+          git add data
+          git commit -m "Auto-generate directory listings"
+          git push
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
