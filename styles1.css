@@ -2,6 +2,20 @@ body {
  background-color: #f5faff;
 }
 
+div.div_double {
+        width:100%;
+        overflow:auto;
+}
+div.div_double div {
+        width:33%;
+        float:left;
+}
+
+div.frame {
+        margin: 100px;
+        border: 10px;
+}
+
 p {
  text-align: justify;
  margin-bottom: 0;
@@ -125,3 +139,5 @@ p {
   max-width: 100%;
  }
 }
+
+

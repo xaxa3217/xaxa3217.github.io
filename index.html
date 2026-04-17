@@ -1,42 +1,87 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<title>Sacha Zakharov's Homepage</title>
-
+<html>
+<link rel="stylesheet" type="text/css" href="styles1.css">
+<!---
 <style>
+img {
+  width: auto;
+  height: auto;
+  /* Magic! */
+  max-width: 13vw;
+}
+
+
+div.div_double {
+	width:100%;
+	overflow:auto;
+}
+div.div_double div {
+	width:33%;
+	float:left;
+}
+
+div.frame {
+	margin: 100px;
+	border: 10px;
+}
+</style>
+--->
+
+<head>
+<!---<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	--->
+<title>Sacha Zakharov's Homepage</title>
+<!---img {
+  width: auto;
+  height: auto;
+  /* Magic! */
+  max-width: 15vw;
+}--->
+
+
+<!---<style>
 div {
   margin: 100px;
   border: 10px
 }
 </style>
+--->
 </head>
+
 <body>
 
 <div class="frame">
-		<img src="index_files/selfie.jpg" width="150" style="float:right">
-		<p></p><h2>Alexander Zakharov</h2>
-<p></p>
-<p>I'm a postdoc in <a href="http://cmi.ac.in">Chennai Mathematical Institute</a>. 
+
+<!---<div>
+<img src="index_files/selfie.jpg" 
+max-width=50vw height:auto width:100% max-width:50vw style="float:right">
+</div>
+--->
+
+<div>
+<h2>Alexander Zakharov</h2>
+</div>
+
+<div class="div_double">
+
+<div>
+<p>I'm a postdoc in <a href="https://www.cmi.ac.in">Chennai Mathematical Institute</a>. 
 I did my PhD at <a href="https://www.imj-prg.fr/">Jussieu</a> and 
 <a href="https://www.math.ens.psl.eu/en/welcome/">l'ENS</a>.
 Before that, I studied at <a href="https://math.hse.ru/en/">math department</a> of Higher School of Economics. 
-		</p>
+</p>
+<br>
 <p>
 Research domains: algebraic topology and geometry.
 </p>
-<!---
-<p>Keywords: torsion, characteristic classes, de Rham stack, jets, Atiyah's class, non abelian derived functors, 
-Fourier-Mukai transform, mixed Hodge structures, connections, spectra, 
-lambda rings, infty-algebras. 
---->
-</p><p>Here is my last year <a href="files/cv.pdf">CV</a> and the 
+
+<p>Here is my last year <a href="files/cv.pdf">CV</a> and the 
 <a href="files/rs.pdf">research statement</a></p>
 <p>My papers with abstracts available at <a href="https://arxiv.org/a/zakharov_a_1.html">arXiv</a>.
 </p>
 <p>
 email: azakharov (^_^) cmi (^.^) ac (^-^) in  
 </p>
-
 
 <br>
 <p>
@@ -45,9 +90,23 @@ This spring we started mathematical physics
 </p>
 <br>
 
-<p>
-Miscellaneous writtings:
-</p><p> <a href="files/emeb.pdf">Integral Cohomology of Eilenberg-Maclane spaces</a>
+</div>
+
+<div><p></p></div>
+
+<div>
+<img src="index_files/selfie.jpg" width=200 style=float:right>
+</div>
+
+</div>
+
+
+<p>Miscellaneous writtings:</p>
+
+<ul>
+<li>
+<div>
+<a href="files/emeb.pdf">Integral Cohomology of Eilenberg-Maclane spaces</a>
 The cohomology of $K(Z,n)$ with field coefficients are well-known, it is a free algebra on classes given by
 the application of admissible Steenrod's operations to the fundamental class of degree $n$. 
 The Pontryagin's ring of integral homology was described by Milgram by means of the iterated
@@ -55,10 +114,14 @@ bar construction. On the other hand the case of cohomology
 is subtler, for example its ring structure localized at $2$ is tricker than an naive attempt to dualize Milgram's answer.
 Following classical Cartan's computations, we study diagonal approximation in the bar construction and 
 relate it to the Cartan's model, following identification of the integral cohomology of Eilenberg-Maclane spaces
-and the cohomology of a certain de Rham complex. The proof of functoriality is given. </p>
-<p></p>
+and the cohomology of a certain de Rham complex. The proof of functoriality is given. 
+</div>
+<br>
+</li>
 
-<p><a href="files/bin_sasha.pdf">Some equivalences of derived exponential functors</a>
+<li>
+<div>
+<a href="files/bin_sasha.pdf">Some equivalences of derived exponential functors</a>
 Assume you have a co/commutative Hopf algebra $H$ over integers. The cohomology of its iterated classifying stack 
 can be though as a non abelian derived functor. Evaluation on a complex $K\in Ch^{&gt;0}(Z)$ 
 following by the Dold--Kan correspondence 
@@ -66,9 +129,13 @@ produces a bialgebra $H(K)$. It is immediate from the construction that the mult
 $H(K)$ depends on the multiplication on $H$, the same holds for comultiplication. Surprisingly  it turns out that 
 $E_1$-structure on $H(K)$ depends only on the coalgebra structure of $H$ in a functorial manner!
 In a work-in-progress with Dmitry Kubrak and Grigorii Shuklin we are going to generalize this observation.
-</p>
+</div>
+<br>
+</li>
 
-<p><a href="files/kaledin_class.pdf">On Kaledin's class</a>
+<li>
+<div>
+<a href="files/kaledin_class.pdf">On Kaledin's class</a>
 Kaledin introduced a complete cohomological obstruction for triviality of a deformation of a non unital associative
 dg-algebra $B$ over the formal completion of affine line $A^1$. 
 In fact the role of $B$ can be played by any object which deformation theory
@@ -91,8 +158,13 @@ At the time it is not clear if there is a single complete (!) cohomological obst
 kind for bases other than $A^1$. 
 It would be interesting to see if prismatic decomposition approach due to Coline Emprin can be generalized and/or
 put in this setting.
-</p>
-<br><br>
+</div>
+<br>
+</li>
+<ul>
+
+</div>
+
 <p>date: 17.04.26</p>
 </div>
 
